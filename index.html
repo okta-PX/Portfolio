@@ -65,15 +65,16 @@
     <section id="about" class="pt-5 mb-5">
         <div class="container text-center ">
             <div class="row">
-                <div class="col elemen">
-                    <h2>About</h2><hr>
+                <div class="col ">
+                    <h2>About</h2>
+                    <hr>
                 </div>
             </div>
 
             <div class="row justify-content-center fs-5">
-                <div class="col-md-4 mb-3 elemen">Saat ini, saya bekerja di sebuah perusahaan swasta di bidang telekomunikasi,
+                <div class="col-md-4 mb-3 ">Saat ini, saya bekerja di sebuah perusahaan swasta di bidang telekomunikasi,
                     khususnya di bagian maintenance.</div>
-                <div class="col-md-4 mb-3 elemen">Saya juga mahasiswa aktif jenjang S1 Sistem Informasi di Jakarta.</div>
+                <div class="col-md-4 mb-3 ">Saya juga mahasiswa aktif jenjang S1 Sistem Informasi di Jakarta.</div>
 
             </div>
         </div>
@@ -89,7 +90,8 @@
         <div class="container text-center ">
             <div class="row">
                 <div class="col elemen">
-                    <h2>Skill</h2> <hr>
+                    <h2>Skill</h2>
+                    <hr>
                 </div>
             </div>
 
@@ -187,7 +189,8 @@
         <div class="container">
             <div class="row text-center">
                 <div class="col elemen">
-                    <h2>Kontak</h2><hr>
+                    <h2>Kontak</h2>
+                    <hr>
                 </div>
             </div>
 
@@ -293,40 +296,40 @@
 
 
 
-<!-- ini untuk elemen  scrol-->
+    <!-- ini untuk elemen  scrol-->
 
-<script>
-    // menangkap event scroll
-    window.addEventListener("scroll", muncul);
+    <script>
+        // menangkap event scroll
+        window.addEventListener("scroll", muncul);
 
-    // fungsi untuk memberikan efek elemen muncul ketika scroll
-    function muncul() {
-        // menangkap setiap tag dengan class elemen
-        let elements = document.querySelectorAll(".elemen");
-        //perulangan untuk setiap tag dengan class elemen
-        for (let i = 0; i < elements.length; i++) {
-            //   mengambil ukuran tinggi layar
-            let tinggiLayar = window.innerHeight;
-            //menangkap ukuran elemen dan posisinya relatif terhadap viewport
-            let jarakAtasElemen = elements[i].getBoundingClientRect().top;
-            // menentukan ukuran scroll untuk memunculkan elemen
-            let ukuranScroll = 150;
-            // jika jarak atas elemen kurang dari tinggi layar dikurangi ukuran scroll maka tambahkan class tampil di setiap tag dengan class elemen
-            if (jarakAtasElemen < tinggiLayar - ukuranScroll) {
-                elements[i].classList.add("tampil");
-            }
-            // jika tidak maka hapus class tampil
-            else {
-                elements[i].classList.remove("tampil");
+        // fungsi untuk memberikan efek elemen muncul ketika scroll
+        function muncul() {
+            // menangkap setiap tag dengan class elemen
+            let elements = document.querySelectorAll(".elemen");
+            //perulangan untuk setiap tag dengan class elemen
+            for (let i = 0; i < elements.length; i++) {
+                //   mengambil ukuran tinggi layar
+                let tinggiLayar = window.innerHeight;
+                //menangkap ukuran elemen dan posisinya relatif terhadap viewport
+                let jarakAtasElemen = elements[i].getBoundingClientRect().top;
+                // menentukan ukuran scroll untuk memunculkan elemen
+                let ukuranScroll = 150;
+                // jika jarak atas elemen kurang dari tinggi layar dikurangi ukuran scroll maka tambahkan class tampil di setiap tag dengan class elemen
+                if (jarakAtasElemen < tinggiLayar - ukuranScroll) {
+                    elements[i].classList.add("tampil");
+                }
+                // jika tidak maka hapus class tampil
+                else {
+                    elements[i].classList.remove("tampil");
 
 
+                }
             }
         }
-    }
-</script>
+    </script>
 
 
-<!-- elemen scrol selesai -->
+    <!-- elemen scrol selesai -->
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
