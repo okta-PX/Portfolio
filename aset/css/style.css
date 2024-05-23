@@ -17,13 +17,35 @@
   color: whitesmoke;
 }
 
-
-.carousel-item{
-
+.carousel-item {
   height: 400px;
+ 
 }
 
-.carousel-item img{
+#skil{
+ background-color:  lightblue;
+}
+
+.carousel-item img {
   width: 100%;
 }
 
+@media (min-width: 780px) {
+  .carousel-inner {
+  height: 400px;
+  }
+
+  .carousel-inner img{
+    height: 100%;
+  }
+}
+
+
+
+
+@media (max-width: 1199.98px) {
+.navbar-collapse a:hover{
+background-color: transparent;
+color: #222;
+}
+}
