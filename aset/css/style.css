@@ -19,11 +19,10 @@
 
 .carousel-item {
   height: 400px;
- 
 }
 
-#skil{
- background-color:  lightblue;
+#skil {
+  background-color: lightblue;
 }
 
 .carousel-item img {
@@ -32,20 +31,21 @@
 
 @media (min-width: 780px) {
   .carousel-inner {
-  height: 400px;
+    height: 400px;
   }
 
-  .carousel-inner img{
+  .carousel-inner img {
     height: 100%;
   }
+
+  .row-list {
+    margin-top: 0;
+  }
 }
-
-
-
 
 @media (max-width: 1199.98px) {
-.navbar-collapse a:hover{
-background-color: transparent;
-color: #222;
-}
+  .navbar-collapse a:hover {
+    background-color: transparent;
+    color: #222;
+  }
 }
